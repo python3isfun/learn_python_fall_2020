@@ -3,20 +3,22 @@
 
 # Environment setup
 
-A laptop.  
-Each student needs to have a laptop, either Windows or Mac OSX. The student should have the permission to install software on the laptop.
+Computer.  
+Each student needs to have access to a personal computer, laptop or desktop, Windows 10 or Mac OSX 10.15. The student's login account should have the permission to install software on the computer.
 
 
 # Software
-PyCharm IDE.  
-https://www.jetbrains.com/pycharm/download/#section=mac
+PyCharm IDE Community Edition (Free, Open Source).  
+https://www.jetbrains.com/pycharm/download
 
 Python 3.8.5  
 https://www.python.org/downloads/release/python-385/
 
 
-Email and Github.  
-For communication and assignments. Every student needs to have an email address and sign up with github.
+Email and Github signup.  
+For communication and assignments, every student needs to have a web email address and register a free Github account.
+
 
 Zoom.  
+We will conduct our weekly class meeting via zoom. Each student needs to have a free zoom account and a working web cam.  
 https://zoom.us/download
