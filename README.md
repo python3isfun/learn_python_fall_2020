@@ -14,7 +14,7 @@ Python 3.8.5
 https://www.python.org/downloads/release/python-385/
 
 
-Email and Github
+Email and Github. 
 For communication and assignments. Every student needs to have an email address and sign up with github.
 
 Zoom
