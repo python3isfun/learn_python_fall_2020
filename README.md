@@ -15,8 +15,8 @@ Python 3.8.5
 https://www.python.org/downloads/release/python-385/
 
 
-Email and Github signup.  
-For communication and assignments, every student needs to have a web email address and register a free Github account.
+Gmail and Github signup.  
+For communication and assignments, every student needs to have a free Gmail address and register a free Github account.
 
 
 Zoom.  
