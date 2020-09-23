@@ -24,13 +24,13 @@
 # print (x)
 
 
-c = input("Input temperature in Celsius: ")
-
-print ("Current Celsius %s" % c)
-
-f = int(c) * 9 / 5 + 32
-
-print ("Current Fahrenheit %s" % f)
+# c = input("Input temperature in Celsius: ")
+#
+# print ("Current Celsius %s" % c)
+#
+# f = int(c) * 9 / 5 + 32
+#
+# print ("Current Fahrenheit %s" % f)
 
 
 # x = "hello" + 2
@@ -60,3 +60,10 @@ print ("Current Fahrenheit %s" % f)
 #     print ("t is 1")
 # else:
 #     print ("t is not 1")
+f = input("Input temperature in Fahrenheit: ")
+
+print ("Current Fahrenheit: %s" % f)
+
+c = (int(f)-32)*5/9
+
+print ("Current Celsius %s" % c)
