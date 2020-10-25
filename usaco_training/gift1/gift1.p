@@ -1,9 +1,3 @@
-"""
-ID: dayong.1
-LANG: PYTHON3
-TASK: gift1
-"""
-'''
 Task 'gift1': Greedy Gift Givers
 A group of NP (2 ≤ NP ≤ 10) uniquely named friends has decided to exchange gifts of money. Each of these friends might or might not give some money to some or all of the other friends (although some might be cheap and give to no one). Likewise, each friend might or might not receive money from any or all of the other friends. Your goal is to deduce how much more money each person receives than they give.
 
@@ -89,47 +83,6 @@ Fourth, 'laura' splits 0 between 'amr' and 'vick'; no changes:
 Finally, 'vick' gives 0 to no one:
 dave	laura	owen	vick	amr
 302	66	-359	141	-150
-'''
 
-lines = []
-with open ('gift1.in', 'r') as fin:
-    for i in fin:
-        lines.append(i.rstrip())
 
-n = int(lines[0])
-names = []
-for i in range(0, n):
-    names.append(lines[i + 1])
-
-cur_line = 1 + n
-
-rname_amt = {}
-for n in names:
-    rname_amt[n] = 0
-
-# print (lines[cur_line])
-
-while cur_line < len(lines):
-    gname = lines[cur_line]
-    # print ("current giveer %s %s" % (cur_line, gname))
-    cur_line = cur_line + 1
-    give = lines[cur_line].split()
-    # print ("%s %s" % (cur_line, give))
-    amt = int(give[0])
-    share = int(give[1])
-    rname_amt[gname] = rname_amt[gname] - amt
-    for j in range(0, share):
-        cur_line = cur_line + 1
-        rname = lines[cur_line]
-        rname_amt[rname] += int(amt/share)
-    left = 0
-    if share != 0:
-        left = amt % share
-    rname_amt[gname] = rname_amt[gname] + left
-    print (rname_amt)
-    cur_line = cur_line + 1
-
-fout = open("gift1.out", "w")
-for n in names:
-    fout.write ("%s %s\n" % (n, rname_amt[n]))
-fout.close()
+# https://train.usaco.org/usacoprob2?S=gift1
