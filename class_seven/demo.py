@@ -11,10 +11,19 @@
 
 # if True:
 # # this is in indent
-# '''
+'''
         this is my first comment
         this is my second comment
-    '''
+'''
+
+# str()
+# int()
+# comment
+# append
+# reverse a string
+# reverse a list
+
+
     # print ('hello')
     # 
     # 

@@ -5,7 +5,8 @@ TASK: beads
 """
 
 def log(s):
-    pass
+    import sys
+    sys.stderr.write(str(s) + "\n")
 
 lines = []
 with open("beads.in", "r") as fin:
@@ -13,11 +14,11 @@ with open("beads.in", "r") as fin:
         lines.append(i)
 
 n = int(lines[0])
-st = lines[1]
+st = lines[1].rstrip()
 max = 0
 for i in range(0, len(st)):
     s = st[i:] + st[0:i]
-    log ("current s %s" % s)
+    # log ("current s '%s'" % s)
     prev = None
     fwd_count = 0
     for p in s:
@@ -43,9 +44,11 @@ for i in range(0, len(st)):
         else:
             break
 
-    log ('fwd %s' % fwd_count)
-    log ('back %s' % bak_count)
+    log ('fwd %s' % str(fwd_count))
+    log ('back %s' % str(bak_count))
     total = fwd_count + bak_count
+    if total > len(s):
+        total = len(s)
     if max < total:
         max = total
 
