@@ -1,14 +1,28 @@
-'''
-reverse a sentence reviewed
 
-reverse a string
 
-shift a string
 
-'''
+############################################
+# ord() and how to use it solve problem ride - train.usaco.org
+############################################
 
-ord()
+fin = open ('ride.in', 'r')
+fout = open("ride.out", "w")
+d = fin.readlines()
+first = d[0].rstrip()
+second = d[1].rstrip()
+# print (first)
+product = 1
+for p in first:
+    # print (p)
+    # print (ord(p) - 64)
+    product = product * (ord(p) - 64)
 
+first = product % 47
+
+
+############################################
+# reverse a sentence word by word
+############################################
 
 x = "apple is good"
 p = x.split()
@@ -25,19 +39,25 @@ for i in p:
     print ("after adding, the result is %s" % new_list)
 
     v = v + 1
+print ("... ... reverse sentence by words using for loop")
 print (new_list)
 
-# print ("good is apple")
 
 
-
-
+############################################
+# reverse a sentence character by character
+############################################
 
 x = "apple is good"
 
-print ("doog si elppa")
+#print ("doog si elppa")
 
 s = ""
 for i in x:
     s = i + s
+print ("... ... reverse sentence using for loop")
 print (s)
+
+# using step size in python
+print ("... ... reverse sentence using step syntax in list index")
+print (x[::-1])
