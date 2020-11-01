@@ -4,6 +4,8 @@ LANG: PYTHON3
 TASK: beads
 """
 
+########################################################################
+# read input routine
 lines = []
 with open("beads.in", "r") as fin:
     for line in fin:
@@ -81,6 +83,10 @@ left_to_right_counter = counter
 # print ("right to left " + str(right_to_left_counter))
 #
 #
+
+
+########################################################################
+# output routine
 # #
 # # fout = open("beads.out", "w")
 # # fout.write(str(max_number))
