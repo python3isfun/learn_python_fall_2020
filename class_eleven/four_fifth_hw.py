@@ -13,7 +13,22 @@ Create a python dictionary recording the following:
 
     The printed dictionary should output:
     {0: 32, 20:68, 100:212}
+'''
 
+# lines = []
+# with open ("temp.in") as fin:
+#     for line in fin:
+#         lines.append(line.rstrip())
+#
+# print (lines)
+# d = {}
+# for c in lines:
+#     celsius = int(c)
+#     fahrenheit = celsius * 9 / 5 + 32
+#     d[celsius] = fahrenheit
+# print (d)
+
+'''
 Problem 2:
     Read a file called friends.in
     Each line has a name followed by the amount of money the friend owns.
@@ -37,3 +52,23 @@ Problem 2:
 
     {'Helena': 15, 'Olivia': 25, 'Brandon': 55, 'Vincent': 38, 'Aidan': 27}
 '''
+
+lines = []
+with open("friends.in", "r") as fin:
+    for line in fin:
+        lines.append(line.rstrip())
+
+print (lines)
+
+d = {}
+
+
+
+for line in lines:
+    print (line)
+    v = line.split()
+    print (v)
+    print (v[0])
+    print (v[1])
+    d[v[0]] = int(v[1])
+print (d)
