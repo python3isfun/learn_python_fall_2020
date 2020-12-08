@@ -1,7 +1,7 @@
 
 d = {1:2, 3:4}
 
-d = {'Helena': 15, 'Olivia': 25, 'Brandon': 55, 'Vincent': 38, 'Aidan': 27, "Aaron":10}
+d = {'Helena': 15, 'Olivia': 25, 'Brandon': 55, 'Vincent': 38, 'Aidan': 27, "Aaron":10,  1:2}
 
 print (d)
 
