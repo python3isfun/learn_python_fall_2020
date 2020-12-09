@@ -9,7 +9,8 @@ double_list = {"Brandon", "Helena"}
 Write a function to do the following:
     . the function name is called update_wallet
     . the function takes two arguments, the dictionary and the list.
-    . the functino should return a new dictionary, such that if the student name is in the double_list, double the amount of money. If the student name is not in the list, deduct 3 from his/her wallet.
+    . the functino should return a new dictionary, such that if the student name is in the double_list,
+        double the amount of money. If the student name is not in the list, deduct 3 from his/her wallet.
 
 Example:
     def update_wallet(d, double_list):
